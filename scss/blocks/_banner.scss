@@ -1,0 +1,150 @@
+// banner.scss
+.banner {
+    position: relative;
+    overflow: hidden;
+    background-color: #100b07; // fallback
+    height: 320px;
+    margin: 0;
+
+    @include vp-1023 {
+        height: 365px;
+    }
+
+    @include vp-767 {
+        height: 280px;
+    }
+
+    @include vp-480 {
+        height: 220px;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 0; // фокус на верхнюю часть
+            display: block;
+            filter: brightness(0.6);
+        }
+    }
+
+    &__container {
+        position: relative;
+        height: 100%;
+        z-index: 5;
+    }
+
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 60px;
+
+        @include vp-1023 {
+            align-items: center;
+            text-align: center;
+            padding: 0 40px;
+        }
+
+        @include vp-767 {
+            padding: 0 20px;
+        }
+
+        @include vp-480 {
+            padding: 0 15px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        margin: 0 0 15px 0;
+        color: #f0e6d6;
+        line-height: 1;
+        text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+
+        @include vp-767 {
+            font-size: 32px;
+        }
+
+        @include vp-480 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    &__description {
+        font-size: 20px;
+        margin: 0 0 25px 0;
+        color: #f0e6d6;
+        max-width: 600px;
+        text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+
+        @include vp-767 {
+            font-size: 18px;
+            max-width: 500px;
+        }
+
+        @include vp-480 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            max-width: 90%;
+        }
+    }
+
+    &__button {
+        font-size: 18px;
+        padding: 12px 35px;
+        background-image: url("../images/btn-2.webp");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 0;
+        color: #f0e6d6;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: #f0e6d6;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        &:focus-visible {
+            outline: 2px solid #f0e6d6;
+            outline-offset: 4px;
+        }
+
+        @include vp-767 {
+            font-size: 16px;
+            padding: 10px 30px;
+        }
+
+        @include vp-480 {
+            font-size: 14px;
+            padding: 8px 24px;
+        }
+    }
+}
