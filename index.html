@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lizaro Casino - Премиум игровой опыт</title>
+    <title>Lizaro Casino – Recenzja 2026 | Bonus, 350 DS i wypłata</title>
+    <meta name="description"
+        content="Recenzja Lizaro Casino 🎰: bonus powitalny, 350 darmowych spinów, kasyno online, turnieje i VIP, a także szybkie wypłaty oraz KYC dla graczy z PL.">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -15,9 +17,8 @@
     <header class="header">
         <div class="container">
             <div class="header__content">
-                <a href="#" class="heder__logo" id="logoLink">
-                    <span class="header__logo-icon header__icon-dragon"></span>
-                    <span class="header__logo-text">LIZARO CASINO</span>
+                <a href="#" class="header__logo" id="logoLink">
+                    <img class="header__logo-img" src="./images/logo.webp" width="68" height="46" alt="logo">
                 </a>
 
                 <button class="burger" id="burgerBtn">
@@ -35,7 +36,7 @@
                             <a href="#facts" class="nav__link">Факты</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#comparison" class="nav__link">Сравнение</a>
+                            <a href="#bonus" class="nav__link">Сравнение</a>
                         </li>
                         <li class="nav__item">
                             <a href="#steps" class="nav__link">Как начать</a>
@@ -47,7 +48,7 @@
                             <a href="#faq" class="nav__link">FAQ</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#cta" class="btn btn--primary">Играть сейчас</a>
+                            <a href="#cta" class="btn btn--primary">Zagraj teraz</a>
                         </li>
                     </ul>
                 </nav>
@@ -62,12 +63,24 @@
     <section class="hero" id="hero">
         <div class="hero__slider">
             <div class="hero__slide hero__slide--active">
-                <img src="https://images.unsplash.com/photo-1595781060147-5cfe0d15d1b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
-                    alt="Игровой интерфейс Lizaro Casino" class="hero__slide-image">
+                <picture class="hero-slider__image">
+                    <source media="(max-width: 767px)"
+                        srcset="images/banner-mobile-1.webp 1x, images/banner-mobile-1@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px) and (max-width: 1023px)"
+                        srcset="images/banner-tablet-1.webp 1x, images/banner-tablet-1@2x.webp 2x" type="image/webp">
+                    <img src="images/banner-desctop-1.webp" srcset="images/banner-desctop-1@2x.webp 2x"
+                        alt="Interfejs gry Lizaro Casino" loading="lazy">
+                </picture>
             </div>
             <div class="hero__slide">
-                <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
-                    alt="Карточные игры в Lizaro Casino" class="hero__slide-image">
+                <picture class="hero-slider__image">
+                    <source media="(max-width: 767px)"
+                        srcset="images/banner-mobile-2.webp 1x, images/banner-mobile-2@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px) and (max-width: 1023px)"
+                        srcset="images/banner-tablet-2.webp 1x, images/banner-tablet-2@2x.webp 2x" type="image/webp">
+                    <img src="images/banner-desctop-2.webp" srcset="images/banner-desctop-2@2x.webp 2x"
+                        alt="Interfejs gry Lizaro Casino" loading="lazy">
+                </picture>
             </div>
 
             <button class="hero__arrow hero__arrow--left">❮</button>
@@ -80,9 +93,13 @@
         </div>
         <div class="container hero__container">
             <div class="hero__content">
-                <h1 class="hero__title">LIZARO CASINO</h1>
-                <p class="hero__description">Премиум игровой опыт с лучшими бонусами и тысячами игр</p>
-                <a href="#cta" class="btn hero__button">Играть сейчас</a>
+                <h1 class="hero__title">
+                    <span>Lizaro Casino PL – bonus,</span>
+                    <span>kasyno online i szybkie wypłaty</span>
+                </h1>
+                <p class="hero__description">Premiumowe doświadczenie hazardu z najlepszymi bonusami i tysiącami gier
+                </p>
+                <a href="#cta" class="btn hero__button">Dołącz teraz</a>
             </div>
         </div>
     </section>
@@ -91,87 +108,161 @@
     <section class="facts" id="facts">
         <div class="container">
             <div class="facts__content">
-                <h2 class="facts__title">Lizaro Casino в цифрах</h2>
+                <h2 class="facts__title">Kluczowe fakty o Lizaro</h2>
+                <p class="facts__text">Poniższa tabela prezentuje najważniejsze dane techniczne dotyczące funkcjonowania
+                    kasyna Lizaro, uwzględniając limity transakcyjne oraz dostępne produkty.</p>
                 <div class="facts__grid">
+
+
                     <div class="card fact-card">
-                        <div class="fact-card__icon icon--gamepad"></div>
-                        <div class="fact-card__number">3000+</div>
-                        <h3 class="fact-card__title">Игровых автоматов</h3>
-                        <p class="fact-card__description">Широкий выбор слотов от ведущих провайдеров</p>
+                        <h3 class="fact-card__title">Marka i rok</h3>
+                        <p class="fact-card__description">Lizaro.com (aktywne w 2025)</p>
                     </div>
 
                     <div class="card fact-card">
-                        <div class="fact-card__icon icon--gift"></div>
-                        <div class="fact-card__number">€1000</div>
-                        <h3 class="fact-card__title">Приветственный бонус</h3>
-                        <p class="fact-card__description">Увеличьте свой первый депозит на 200%</p>
+                        <h3 class="fact-card__title">Główne produkty</h3>
+                        <p class="fact-card__description">Kasyno online, Kasyno na żywo, Zakłady sportowe, E-sport</p>
                     </div>
 
                     <div class="card fact-card">
-                        <div class="fact-card__icon icon--clock"></div>
-                        <div class="fact-card__number">24/7</div>
-                        <h3 class="fact-card__title">Поддержка</h3>
-                        <p class="fact-card__description">Круглосуточная помощь на 8 языках</p>
+                        <h3 class="fact-card__title">Liczba gier</h3>
+                        <p class="fact-card__description">Ponad 5 000 (Sloty, Jackpoty, Gry Instant, Stołowe)</p>
                     </div>
 
                     <div class="card fact-card">
-                        <div class="fact-card__icon icon--shield"></div>
-                        <div class="fact-card__number">100%</div>
-                        <h3 class="fact-card__title">Безопасность</h3>
-                        <p class="fact-card__description">Лицензия и шифрование данных</p>
+                        <h3 class="fact-card__title">Pakiet powitalny</h3>
+                        <p class="fact-card__description">250% do ok. 13 500 zł (3 000 EUR) + 350 darmowych spinów</p>
                     </div>
+
+                    <div class="card fact-card">
+                        <h3 class="fact-card__title">Min. depozyt</h3>
+                        <p class="fact-card__description">Od 45–90 zł (zależnie od metody)</p>
+                    </div>
+
+                    <div class="card fact-card">
+                        <h3 class="fact-card__title">Limity wypłat</h3>
+                        <p class="fact-card__description">31 500 zł (startowo) – 85 000 zł (VIP) miesięcznie</p>
+                    </div>
+
+                    <div class="card fact-card">
+                        <h3 class="fact-card__title">Waluty</h3>
+                        <p class="fact-card__description">PLN, EUR, USD, Krypto (USDT, BTC, ETH, LTC)</p>
+                    </div>
+
+                    <div class="card fact-card">
+                        <h3 class="fact-card__title">Wsparcie</h3>
+                        <p class="fact-card__description">Czat na żywo 24/7, e-mail (support@lizaro.com)</p>
+                    </div>
+
+                    <div class="card fact-card">
+                        <h3 class="fact-card__title">Mobilność</h3>
+                        <p class="fact-card__description">Wersja przeglądarkowa (Mobile Web), opcja PWA (skrót na ekran)
+                        </p>
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Table -->
-    <section class="comparison" id="comparison">
+    <section class="bonus" id="bonus">
         <div class="container">
-            <div class="comparison__content">
-                <h2 class="comparison__title">Сравнение условий</h2>
-                <table class="comparison__table">
+            <div class="bonus__content">
+                <h2 class="bonus__title">Bonusy i promocje w Lizaro</h2>
+                <p class="bonus__text">Platforma Lizaro przygotowała dla polskich użytkowników rozbudowaną sekcję bonusy
+                    i promocje, obejmującą nie tylko premię na start, ale także regularne doładowania konta. Główną
+                    atrakcją jest potężny pakiet powitalny, który obejmuje cztery pierwsze depozyty i oferuje łączną
+                    wartość do około 13 500 zł oraz pakiet 350 darmowych spinów. Lizaro stawia na jasne zasady, choć
+                    gracze powinni zwrócić uwagę na specyfikę wymagań obrotu, które dotyczą sumy depozytu i bonusu</p>
+                <table class="bonus__table">
                     <thead>
-                        <tr class="comparison__table-row">
-                            <th class="comparison__table-head">Параметр</th>
-                            <th class="comparison__table-head">Lizaro Casino</th>
-                            <th class="comparison__table-head">Обычные казино</th>
+                        <tr class="bonus__table-row">
+                            <th class="bonus__table-head">Typ oferty</th>
+                            <th class="bonus__table-head">Wartość maksymalna</th>
+                            <th class="bonus__table-head">Szczegóły</th>
+                            <th class="bonus__table-head">Wymogi (Wager)</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="comparison__table-row">
-                            <td class="comparison__table-data">Минимальный депозит</td>
-                            <td class="comparison__table-data"><span class="checkmark">€10</span></td>
-                            <td class="comparison__table-data">€20-€50</td>
-                        </tr>
-                        <tr class="comparison__table-row">
-                            <td class="comparison__table-data">Время выплаты</td>
-                            <td class="comparison__table-data"><span class="checkmark">До 24 часов</span></td>
-                            <td class="comparison__table-data">3-5 рабочих дней</td>
-                        </tr>
-                        <tr class="comparison__table-row">
-                            <td class="comparison__table-data">Бонус на первый депозит</td>
-                            <td class="comparison__table-data"><span class="checkmark">До €1000 + 200 фриспинов</span>
+                        <tr class="bonus__table-row">
+                            <td class="bonus__table-data">Kasyno – Start (1. depozyt)</td>
+                            <td class="bonus__table-data">
+                                <span class="checkmark">
+                                    100% do 4 500 zł
+                                </span>
                             </td>
-                            <td class="comparison__table-data">До €200</td>
+                            <td class="bonus__table-data">+200 FS</td>
+                            <td class="bonus__table-data">
+                                <span class="checkmark">
+                                    x35 (Depozyt+Bonus)
+                                </span>
+                            </td>
                         </tr>
-                        <tr class="comparison__table-row">
-                            <td class="comparison__table-data">Программа лояльности</td>
-                            <td class="comparison__table-data"><span class="checkmark">10-уровневая система</span></td>
-                            <td class="comparison__table-data">Базовая программа</td>
+
+                        <tr class="bonus__table-row">
+                            <td class="bonus__table-data">Sport – Start</td>
+                            <td class="bonus__table-data"><span class="checkmark">100% do 1 350 zł</span></td>
+                            <td class="bonus__table-data">Do wykorzystania w zakładach</td>
+                            <td class="bonus__table-data"><span class="checkmark">x6 (Bonus)</span></td>
                         </tr>
-                        <tr class="comparison__table-row">
-                            <td class="comparison__table-data">Количество провайдеров</td>
-                            <td class="comparison__table-data"><span class="checkmark">Более 80</span></td>
-                            <td class="comparison__table-data">20-30</td>
+
+                        <tr class="bonus__table-row">
+                            <td class="bonus__table-data">Weekendowy Reload</td>
+                            <td class="bonus__table-data">
+                                <span class="checkmark">
+                                    50% do 3 150 zł
+                                </span>
+                            </td>
+                            <td class="bonus__table-data">+50 darmowych spinów</td>
+                            <td class="bonus__table-data">
+                                <span class="checkmark">
+                                    x35x40 (FS)
+                                </span>
+                            </td>
                         </tr>
-                        <tr class="comparison__table-row">
-                            <td class="comparison__table-data">Мобильное приложение</td>
-                            <td class="comparison__table-data"><span class="checkmark">iOS и Android</span></td>
-                            <td class="comparison__table-data">Только мобильная версия сайта</td>
+
+                        <tr class="bonus__table-row">
+                            <td class="bonus__table-data">Live Cashback</td>
+                            <td class="bonus__table-data"><span class="checkmark">25% do 900 zł</span></td>
+                            <td class="bonus__table-data">Zwrot za gry na żywo</td>
+                            <td class="bonus__table-data"><span class="checkmark">x1</span></td>
                         </tr>
+
                     </tbody>
                 </table>
+
+                <h3 class="bonus__subtitle">Kluczowe warunki (Small Print)</h3>
+                <p class="bonus__text">
+                    Zanim aktywujesz bonus powitalny, warto zapoznać się ze szczegółowymi zasadami zapisanymi w
+                    regulaminie, aby uniknąć problemów przy wypłacie środków.
+                </p>
+                <ul class="bonus__list">
+                    <li class="bonus__list-item">
+                        <strong>Wykluczenia płatności:</strong> depozyty realizowane za pośrednictwem portfeli Skrill
+                        oraz Neteller nie kwalifikują się do odbioru bonusów powitalnych.
+                    </li>
+                    <li class="bonus__list-item">
+                        <strong>Limit stawki:</strong> podczas gry z aktywnym bonusem maksymalny zakład na jeden
+                        spin/rundę nie może przekraczać 22,50 zł (5 EUR). Przekroczenie tego limitu może skutkować
+                        anulowaniem wygranych.
+                    </li>
+                    <li class="bonus__list-item">
+                        <strong>Czas na obrót:</strong> gracz ma 10 dni na spełnienie warunków obrotu (rollover). Po tym
+                        czasie środki bonusowe przepadają.
+                    </li>
+                    <li class="bonus__list-item">
+                        <strong>Waga gier:</strong> sloty w większości wliczają się w 100% do obrotu, jednak gry
+                        stołowe, wideo poker i kasyno na żywo mają znacznie niższy współczynnik (zwykle 10%) lub są
+                        całkowicie wyłączone (np. Jackpoty).
+                    </li>
+                </ul>
+                <p class="bonus__note">
+                    <strong>Wskazówka Lizaro:</strong> Jeśli planujesz korzystać z bonusów, najlepszą metodą wpłaty dla
+                    polskich graczy jest MiFinity lub karta płatnicza. Te metody gwarantują natychmiastową kwalifikację
+                    do promocji, w przeciwieństwie do niektórych e-portfeli.
+                </p>
             </div>
         </div>
     </section>
