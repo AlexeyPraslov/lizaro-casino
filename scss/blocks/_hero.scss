@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     overflow: hidden;
-    background-color: #100b07;
+    background-color: $color-black-russian;
     height: 320px;
     margin: 85px 0 0 0;
 
@@ -69,7 +69,7 @@
         }
 
         &:focus-visible {
-            outline: 2px solid #f0e6d6;
+            outline: 2px solid $color-soapstone;
             outline-offset: 4px;
         }
 
@@ -127,13 +127,13 @@
         font-weight: 700;
         font-size: 40px;
         margin: 0 0 15px 0;
-        color: #f0e6d6;
+        color: $color-soapstone;
         line-height: 1;
         text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
+            -1px -1px 0 $color-black,
+            1px -1px 0 $color-black,
+            -1px 1px 0 $color-black,
+            1px 1px 0 $color-black;
 
         @include vp-767 {
             font-size: 32px;
@@ -152,13 +152,13 @@
     &__description {
         font-size: 20px;
         margin: 0 0 15px 0;
-        color: #f0e6d6;
+        color: $color-soapstone;
         max-width: 600px;
         text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
+            -1px -1px 0 $color-black,
+            1px -1px 0 $color-black,
+            -1px 1px 0 $color-black,
+            1px 1px 0 $color-black;
 
         @include vp-767 {
             font-size: 18px;
@@ -183,17 +183,17 @@
         background-repeat: no-repeat;
         border: none;
         border-radius: 0;
-        color: #f0e6d6;
+        color: $color-soapstone;
         transition: all 0.3s ease;
 
         &:hover {
-            color: #f0e6d6;
+            color: $color-soapstone;
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px $color-black-30;
         }
 
         &:focus-visible {
-            outline: 2px solid #f0e6d6;
+            outline: 2px solid $color-soapstone;
             outline-offset: 4px;
         }
 
@@ -228,7 +228,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: rgba(240, 230, 214, 0.5);
+        background-color: $color-soapstone-50;
         border: none;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -242,13 +242,13 @@
 
         &:hover,
         &:focus-visible {
-            background-color: #f0e6d6;
+            background-color: $color-soapstone;
             transform: scale(1.2);
             outline: none;
         }
 
         &--active {
-            background-color: #f0e6d6;
+            background-color: $color-soapstone;
             transform: scale(1.2);
         }
 

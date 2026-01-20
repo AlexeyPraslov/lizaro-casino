@@ -1,15 +1,15 @@
 .card {
-    background-color: #25150d;
+    background-color: $color-wood-bark;
     border-radius: 8px;
     padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px $color-black-30;
     transition: all 0.3s ease;
     height: 100%;
-    border: 1px solid #25150d;
+    border: 1px solid $color-wood-bark;
 
     &:hover {
         transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-        border-color: #563c27;
+        box-shadow: 0 15px 30px $color-black-40;
+        border-color: $color-bracken;
     }
 }

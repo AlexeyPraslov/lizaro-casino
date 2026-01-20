@@ -2,7 +2,7 @@
 .banner {
     position: relative;
     overflow: hidden;
-    background-color: #100b07; // fallback
+    background-color: $color-black-russian;
     height: 320px;
     margin: 0;
 
@@ -30,7 +30,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: 50% 0; // фокус на верхнюю часть
+            object-position: 50% 0;
             display: block;
             filter: brightness(0.6);
         }
@@ -100,13 +100,13 @@
         font-weight: 700;
         font-size: 40px;
         margin: 0 0 15px 0;
-        color: #f0e6d6;
+        color: $color-soapstone;
         line-height: 1;
         text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
+            -1px -1px 0 $color-black,
+            1px -1px 0 $color-black,
+            -1px 1px 0 $color-black,
+            1px 1px 0 $color-black;
 
         @include vp-767 {
             font-size: 32px;
@@ -125,13 +125,13 @@
     &__description {
         font-size: 20px;
         margin: 0 0 25px 0;
-        color: #f0e6d6;
+        color: $color-soapstone;
         max-width: 600px;
         text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
+            -1px -1px 0 $color-black,
+            1px -1px 0 $color-black,
+            -1px 1px 0 $color-black,
+            1px 1px 0 $color-black;
 
         @include vp-767 {
             font-size: 18px;
@@ -154,17 +154,17 @@
         background-repeat: no-repeat;
         border: none;
         border-radius: 0;
-        color: #f0e6d6;
+        color: $color-soapstone;
         transition: all 0.3s ease;
 
         &:hover {
-            color: #f0e6d6;
+            color: $color-soapstone;
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px $color-black-30;
         }
 
         &:focus-visible {
-            outline: 2px solid #f0e6d6;
+            outline: 2px solid $color-soapstone;
             outline-offset: 4px;
         }
 

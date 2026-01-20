@@ -455,7 +455,6 @@ h2 {
   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
   border: none;
   border-radius: 8px;
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
@@ -564,7 +563,6 @@ h2 {
   font-size: 28px;
 }
 .header__logo-text {
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
   color: #f0e6d6;
@@ -583,7 +581,7 @@ h2 {
     right: 0;
     width: 300px;
     height: 100vh;
-    background-color: #100b07;
+    background-color: #070b18;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -714,8 +712,6 @@ h2 {
   -ms-user-select: none;
   display: none;
   z-index: 1001;
-  /* Анимация открытия */
-  /* Анимация закрытия (зеркальная) */
 }
 @media (max-width: 1023px) {
   .burger {
@@ -811,7 +807,7 @@ h2 {
 .hero {
   position: relative;
   overflow: hidden;
-  background-color: #100b07;
+  background-color: #070b18;
   height: 320px;
   margin: 85px 0 0 0;
 }
@@ -956,7 +952,7 @@ h2 {
   margin: 0 0 15px 0;
   color: #f0e6d6;
   line-height: 1;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 @media (max-width: 767px) {
   .hero__title {
@@ -977,7 +973,7 @@ h2 {
   margin: 0 0 15px 0;
   color: #f0e6d6;
   max-width: 600px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 @media (max-width: 767px) {
   .hero__description {
@@ -1385,7 +1381,7 @@ h2 {
   font-weight: 700;
   font-size: 24px;
   margin: 0 auto 20px;
-  border: 1px solid #6a4a32;
+  border: 1px solid #563c27;
 }
 .step-card__description {
   margin-bottom: 0;
@@ -1562,9 +1558,9 @@ h2 {
 }
 .big-cta__content {
   width: 100%;
-  max-width: 800px; /* ограничиваем ширину контента */
+  max-width: 800px;
   margin: 0 auto;
-  padding: 40px 30px; /* добавляем внутренние отступы */
+  padding: 40px 30px;
   background-image: url("../images/bg-cta.webp");
   background-size: cover;
   background-position: center 15%;
@@ -1620,7 +1616,7 @@ h2 {
 }
 
 .footer {
-  background-color: #100b07;
+  background-color: #070b18;
   padding: 60px 0 30px;
   border-top: 1px solid #25150d;
 }
@@ -1652,7 +1648,7 @@ h2 {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 30px;
-  color: #a89b87;
+  color: #a79d94;
   text-align: center;
   max-width: 800px;
 }
@@ -1762,7 +1758,7 @@ h2 {
 .banner {
   position: relative;
   overflow: hidden;
-  background-color: #100b07;
+  background-color: #070b18;
   height: 320px;
   margin: 0;
 }
@@ -1892,7 +1888,7 @@ h2 {
   margin: 0 0 15px 0;
   color: #f0e6d6;
   line-height: 1;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 @media (max-width: 767px) {
   .banner__title {
@@ -1913,7 +1909,7 @@ h2 {
   margin: 0 0 25px 0;
   color: #f0e6d6;
   max-width: 600px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 @media (max-width: 767px) {
   .banner__description {
@@ -1967,7 +1963,7 @@ h2 {
 
 .steps {
   background-color: #231810;
-  border-bottom: 1px solid #25150d;
+  border-bottom: 1px solid #2e1f14;
   padding: 80px 0;
 }
 @media (max-width: 1023px) {
@@ -2178,7 +2174,7 @@ h2 {
 
 .sports {
   background-color: #231810;
-  border-bottom: 1px solid #25150d;
+  border-bottom: 1px solid #2e1f14;
   padding: 80px 0;
 }
 @media (max-width: 1023px) {
@@ -2242,8 +2238,8 @@ h2 {
   background-color: #231810;
   border-radius: 8px;
   overflow: hidden;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
   border: 1px solid #2e1f14;
   margin-bottom: 40px;
 }
@@ -2367,11 +2363,11 @@ h2 {
 .rewards__table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #231810;
+  background-color: #2e1f14;
   border-radius: 8px;
   overflow: hidden;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
   border: 1px solid #2e1f14;
   margin-bottom: 40px;
 }
@@ -2424,7 +2420,7 @@ h2 {
 
 .payments {
   background-color: #231810;
-  border-bottom: 1px solid #25150d;
+  border-bottom: 1px solid #2e1f14;
   padding: 80px 0;
 }
 @media (max-width: 1023px) {
@@ -2643,7 +2639,7 @@ h2 {
 }
 
 .review {
-  background-color: #231810;
+  background-color: #2e1f14;
   border: 1px solid #2e1f14;
   border-radius: 8px;
   padding: 24px;
@@ -2714,7 +2710,7 @@ h2 {
 
 .support {
   background-color: #231810;
-  border-bottom: 1px solid #25150d;
+  border-bottom: 1px solid #2e1f14;
   padding: 80px 0;
 }
 @media (max-width: 1023px) {
