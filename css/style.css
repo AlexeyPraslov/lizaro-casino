@@ -581,7 +581,7 @@ h2 {
     right: 0;
     width: 300px;
     height: 100vh;
-    background-color: #070b18;
+    background-color: rgba(16, 11, 7, 0.95);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1616,7 +1616,7 @@ h2 {
 }
 
 .footer {
-  background-color: #070b18;
+  background-color: rgba(16, 11, 7, 0.95);
   padding: 60px 0 30px;
   border-top: 1px solid #25150d;
 }
@@ -1680,7 +1680,6 @@ h2 {
   }
 }
 .footer__payment-btn {
-  /* 🔥 ФИКСИРУЕМ РАЗМЕР */
   width: 80px;
   height: 36px;
   min-width: 80px;

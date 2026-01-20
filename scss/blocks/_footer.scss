@@ -1,5 +1,5 @@
 .footer {
-    background-color: $color-black-russian;
+    background-color: $color-black-russian-95;
     padding: 60px 0 30px;
     border-top: 1px solid $color-wood-bark;
 
@@ -50,7 +50,6 @@
     }
 
     &__payment-btn {
-        /* 🔥 ФИКСИРУЕМ РАЗМЕР */
         width: 80px;
         height: 36px;
         min-width: 80px;
