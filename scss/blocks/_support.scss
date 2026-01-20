@@ -1,4 +1,3 @@
-// Support section — consistent with the rest of the site
 .support {
     background-color: #231810;
     border-bottom: 1px solid #25150d;
@@ -72,6 +71,7 @@
             display: block;
             overflow-x: auto;
             border-radius: 8px;
+            @include custom-scrollbar(#2e1f14, #8b5a3c, #a67c52, 8px);
         }
     }
 

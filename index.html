@@ -8,6 +8,11 @@
     <meta name="description"
         content="Recenzja Lizaro Casino 🎰: bonus powitalny, 350 darmowych spinów, kasyno online, turnieje i VIP, a także szybkie wypłaty oraz KYC dla graczy z PL.">
 
+    <link rel="icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -271,14 +276,14 @@
     <section class="banner" id="banner">
         <picture class="banner__image">
             <source media="(max-width: 767px)"
-                srcset="images/banner-mobile-1.webp 1x, images/banner-mobile-1@2x.webp 2x" type="image/webp">
+                srcset="images/banner-img-1-mobile.webp 1x, images/banner-img-1-mobile@2x.webp 2x" type="image/webp">
             <source media="(min-width: 768px) and (max-width: 1023px)"
-                srcset="images/banner-tablet-1.webp 1x, images/banner-tablet-1@2x.webp 2x" type="image/webp">
-            <img src="images/banner-desctop-1.webp" srcset="images/banner-desctop-1@2x.webp.webp 2x"
+                srcset="images/banner-img-1-tablet.webp 1x, images/banner-img-1-tablet@2x.webp 2x" type="image/webp">
+            <img src="images/banner-img-1.webp" srcset="images/banner-img-1@2x.webp 2x"
                 alt="Lizaro Casino – bonus i szybkie wypłaty" loading="lazy">
         </picture>
         <div class="container banner__container">
-            <div class="banner__content">
+            <div class="banner__content--accent">
                 <h1 class="banner__title">
                     <span>Lizaro Casino PL – bonus,</span>
                     <span>kasyno online i szybkie wypłaty</span>
@@ -582,10 +587,10 @@
     <section class="banner" id="banner">
         <picture class="banner__image">
             <source media="(max-width: 767px)"
-                srcset="images/banner-mobile-1.webp 1x, images/banner-mobile-1@2x.webp 2x" type="image/webp">
+                srcset="images/banner-img-2-mobile.webp 1x, images/banner-img-2-mobile@2x.webp 2x" type="image/webp">
             <source media="(min-width: 768px) and (max-width: 1023px)"
-                srcset="images/banner-tablet-1.webp 1x, images/banner-tablet-1@2x.webp 2x" type="image/webp">
-            <img src="images/banner-desctop-1.webp" srcset="images/banner-desctop-1@2x.webp.webp 2x"
+                srcset="images/banner-img-2-tablet.webp 1x, images/banner-img-2-tablet@2x.webp 2x" type="image/webp">
+            <img src="images/banner-img-2.webp" srcset="images/banner-img-2@2x.webp 2x"
                 alt="Lizaro Casino – bonus i szybkie wypłaty" loading="lazy">
         </picture>
         <div class="container banner__container">
@@ -1079,25 +1084,43 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__content">
-                <a href="#" class="footer__logo">
-                    <span class="footer__logo-icon icon--dragon"></span>
-                    <span class="footer__logo-text">LIZARO CASINO</span>
+                <a href="#" class="footer__logo" aria-label="Lizaro Casino – 18+">
+                    <svg class="footer__icon" width="40" height="41">
+                        <use xlink:href="/images/sprite.svg#icon-18+"></use>
+                    </svg>
                 </a>
-                <p class="footer__disclaimer">Lizaro Casino — это премиум игровая платформа с лицензией, предлагающая
-                    широкий выбор азартных игр. Играйте ответственно. Минимальный возраст для участия — 18 лет.</p>
 
                 <div class="footer__payments">
-                    <div class="footer__payment-icon icon--visa"></div>
-                    <div class="footer__payment-icon icon--mastercard"></div>
-                    <div class="footer__payment-icon icon--bitcoin"></div>
+                    <button type="button" class="footer__payment-btn" aria-label="Visa" style="--icon-size: 50px;">
+                        <svg class="footer__payment-icon" role="img" aria-hidden="true">
+                            <use xlink:href="/images/sprite.svg#icon-visa"></use>
+                        </svg>
+                    </button>
+
+                    <button type="button" class="footer__payment-btn" aria-label="Mastercard"
+                        style="--icon-size: 50px;">
+                        <svg class="footer__payment-icon" role="img" aria-hidden="true">
+                            <use xlink:href="/images/sprite.svg#icon-mastercard"></use>
+                        </svg>
+                    </button>
+
+                    <button type="button" class="footer__payment-btn" aria-label="Interac" style="--icon-size: 55px;">
+                        <svg class="footer__payment-icon" role="img" aria-hidden="true">
+                            <use xlink:href="/images/sprite.svg#icon-interac"></use>
+                        </svg>
+                    </button>
                 </div>
 
-                <p class="footer__disclaimer">© 2023 Lizaro Casino. Все права защищены.</p>
+
             </div>
 
             <div class="footer__bottom">
-                <p class="footer__bottom-text">Lizaro Casino operates under the license of the Malta Gaming Authority
-                    (MGA/B2C/394/2017). Gambling can be addictive. Play responsibly. 18+ only.</p>
+                <p class="footer__bottom-text">
+                    Gambling can be addictive. Play responsibly. Lizaro.com only accepts customers over 18 years of age.
+                </p>
+                <p class="footer__bottom-text">
+                    2026 © Lizaro.com All rights reserved.
+                </p>
             </div>
         </div>
     </footer>

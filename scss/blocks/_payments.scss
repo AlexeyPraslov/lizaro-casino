@@ -92,6 +92,7 @@
             display: block;
             overflow-x: auto;
             border-radius: 8px;
+            @include custom-scrollbar(#2e1f14, #8b5a3c, #a67c52, 8px);
         }
     }
 

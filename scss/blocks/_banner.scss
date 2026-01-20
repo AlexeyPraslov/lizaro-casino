@@ -63,6 +63,37 @@
         @include vp-480 {
             padding: 0 15px;
         }
+
+        &--accent {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+
+            .banner__title,
+            .banner__description {
+                text-align: right;
+
+                @include vp-1023 {
+                    text-align: center;
+                }
+            }
+
+            @include vp-1023 {
+                align-items: center;
+                text-align: center;
+                padding: 0 40px;
+            }
+
+            @include vp-767 {
+                padding: 0 20px;
+            }
+
+            @include vp-480 {
+                padding: 0 15px;
+            }
+        }
     }
 
     &__title {
