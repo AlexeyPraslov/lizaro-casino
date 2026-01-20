@@ -814,6 +814,7 @@ h2 {
 @media (max-width: 1023px) {
   .hero {
     height: 365px;
+    margin: 75px 0 0 0;
   }
 }
 @media (max-width: 767px) {
