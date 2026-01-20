@@ -17,6 +17,8 @@
 
     &__icon {
         display: block;
+        width: 40px;
+        height: 41px;
     }
 
     &__disclaimer {
@@ -48,17 +50,24 @@
     }
 
     &__payment-btn {
+        /* 🔥 ФИКСИРУЕМ РАЗМЕР */
         width: 80px;
         height: 36px;
+        min-width: 80px;
+        min-height: 36px;
+        max-width: 80px;
+        max-height: 36px;
+
         background-color: $color-toledo-20;
         border: 1px solid $color-wood-bark;
         border-radius: 4px;
         cursor: pointer;
-        transition: all 0.2s ease;
         padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.2s ease;
+        flex-shrink: 0; /* не сжимается */
 
         &:hover,
         &:focus {
@@ -67,39 +76,42 @@
             outline: none;
         }
 
+        /* Адаптив */
         @include vp-1023 {
             width: 70px;
             height: 32px;
+            min-width: 70px;
+            min-height: 32px;
+            max-width: 70px;
+            max-height: 32px;
         }
 
         @include vp-767 {
             width: 64px;
             height: 30px;
+            min-width: 64px;
+            min-height: 30px;
+            max-width: 64px;
+            max-height: 30px;
         }
 
         @include vp-480 {
             width: 56px;
             height: 28px;
+            min-width: 56px;
+            min-height: 28px;
+            max-width: 56px;
+            max-height: 28px;
         }
     }
 
     &__payment-icon {
         width: var(--icon-size, 50px);
         height: auto;
+        max-width: 100%;
+        max-height: 100%;
         display: block;
         fill: currentColor;
-
-        @include vp-1023 {
-            width: calc(var(--icon-size, 50px) * 0.88);
-        }
-
-        @include vp-767 {
-            width: calc(var(--icon-size, 50px) * 0.8);
-        }
-
-        @include vp-480 {
-            width: calc(var(--icon-size, 50px) * 0.72);
-        }
     }
 
     &__bottom {

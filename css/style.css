@@ -1643,6 +1643,8 @@ h2 {
 }
 .footer__icon {
   display: block;
+  width: 40px;
+  height: 41px;
 }
 .footer__disclaimer {
   font-size: 14px;
@@ -1678,14 +1680,17 @@ h2 {
   }
 }
 .footer__payment-btn {
+  /* 🔥 ФИКСИРУЕМ РАЗМЕР */
   width: 80px;
   height: 36px;
+  min-width: 80px;
+  min-height: 36px;
+  max-width: 80px;
+  max-height: 36px;
   background-color: rgba(86, 60, 39, 0.2);
   border: 1px solid #25150d;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1696,6 +1701,11 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; /* не сжимается */
+  /* Адаптив */
 }
 .footer__payment-btn:hover, .footer__payment-btn:focus {
   background-color: rgba(86, 60, 39, 0.4);
@@ -1707,40 +1717,39 @@ h2 {
   .footer__payment-btn {
     width: 70px;
     height: 32px;
+    min-width: 70px;
+    min-height: 32px;
+    max-width: 70px;
+    max-height: 32px;
   }
 }
 @media (max-width: 767px) {
   .footer__payment-btn {
     width: 64px;
     height: 30px;
+    min-width: 64px;
+    min-height: 30px;
+    max-width: 64px;
+    max-height: 30px;
   }
 }
 @media (max-width: 480px) {
   .footer__payment-btn {
     width: 56px;
     height: 28px;
+    min-width: 56px;
+    min-height: 28px;
+    max-width: 56px;
+    max-height: 28px;
   }
 }
 .footer__payment-icon {
   width: var(--icon-size, 50px);
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
   display: block;
   fill: currentColor;
-}
-@media (max-width: 1023px) {
-  .footer__payment-icon {
-    width: calc(var(--icon-size, 50px) * 0.88);
-  }
-}
-@media (max-width: 767px) {
-  .footer__payment-icon {
-    width: calc(var(--icon-size, 50px) * 0.8);
-  }
-}
-@media (max-width: 480px) {
-  .footer__payment-icon {
-    width: calc(var(--icon-size, 50px) * 0.72);
-  }
 }
 .footer__bottom {
   text-align: center;
@@ -2919,7 +2928,7 @@ h2 {
 
 .why {
   background-color: #231810;
-  border-bottom: 1px solid #25150d;
+  border-bottom: 1px solid #2e1f14;
   padding: 80px 0;
 }
 @media (max-width: 1023px) {
