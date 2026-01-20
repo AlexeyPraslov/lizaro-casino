@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lizaro Casino - Премиум игровой опыт</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#" class="heder__logo" id="logoLink">
+                    <span class="header__logo-icon header__icon-dragon"></span>
+                    <span class="header__logo-text">LIZARO CASINO</span>
+                </a>
+
+                <button class="burger" id="burgerBtn">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+
+                <nav class="nav" id="navMenu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#hero" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#facts" class="nav__link">Факты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#comparison" class="nav__link">Сравнение</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#steps" class="nav__link">Как начать</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#advantages" class="nav__link">Преимущества</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faq" class="nav__link">FAQ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#cta" class="btn btn--primary">Играть сейчас</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Оверлей для мобильного меню -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__slider">
+            <div class="hero__slide hero__slide--active">
+                <img src="https://images.unsplash.com/photo-1595781060147-5cfe0d15d1b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
+                    alt="Игровой интерфейс Lizaro Casino" class="hero__slide-image">
+            </div>
+            <div class="hero__slide">
+                <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
+                    alt="Карточные игры в Lizaro Casino" class="hero__slide-image">
+            </div>
+
+            <button class="hero__arrow hero__arrow--left">❮</button>
+            <button class="hero__arrow hero__arrow--right">❯</button>
+
+            <div class="hero__slider-dots">
+                <button class="hero__slider-dot hero__slider-dot--active" data-slide="0"></button>
+                <button class="hero__slider-dot" data-slide="1"></button>
+            </div>
+        </div>
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">LIZARO CASINO</h1>
+                <p class="hero__description">Премиум игровой опыт с лучшими бонусами и тысячами игр</p>
+                <a href="#cta" class="btn hero__button">Играть сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Facts -->
+    <section class="facts" id="facts">
+        <div class="container">
+            <div class="facts__content">
+                <h2 class="facts__title">Lizaro Casino в цифрах</h2>
+                <div class="facts__grid">
+                    <div class="card fact-card">
+                        <div class="fact-card__icon icon--gamepad"></div>
+                        <div class="fact-card__number">3000+</div>
+                        <h3 class="fact-card__title">Игровых автоматов</h3>
+                        <p class="fact-card__description">Широкий выбор слотов от ведущих провайдеров</p>
+                    </div>
+
+                    <div class="card fact-card">
+                        <div class="fact-card__icon icon--gift"></div>
+                        <div class="fact-card__number">€1000</div>
+                        <h3 class="fact-card__title">Приветственный бонус</h3>
+                        <p class="fact-card__description">Увеличьте свой первый депозит на 200%</p>
+                    </div>
+
+                    <div class="card fact-card">
+                        <div class="fact-card__icon icon--clock"></div>
+                        <div class="fact-card__number">24/7</div>
+                        <h3 class="fact-card__title">Поддержка</h3>
+                        <p class="fact-card__description">Круглосуточная помощь на 8 языках</p>
+                    </div>
+
+                    <div class="card fact-card">
+                        <div class="fact-card__icon icon--shield"></div>
+                        <div class="fact-card__number">100%</div>
+                        <h3 class="fact-card__title">Безопасность</h3>
+                        <p class="fact-card__description">Лицензия и шифрование данных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table -->
+    <section class="comparison" id="comparison">
+        <div class="container">
+            <div class="comparison__content">
+                <h2 class="comparison__title">Сравнение условий</h2>
+                <table class="comparison__table">
+                    <thead>
+                        <tr class="comparison__table-row">
+                            <th class="comparison__table-head">Параметр</th>
+                            <th class="comparison__table-head">Lizaro Casino</th>
+                            <th class="comparison__table-head">Обычные казино</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="comparison__table-row">
+                            <td class="comparison__table-data">Минимальный депозит</td>
+                            <td class="comparison__table-data"><span class="checkmark">€10</span></td>
+                            <td class="comparison__table-data">€20-€50</td>
+                        </tr>
+                        <tr class="comparison__table-row">
+                            <td class="comparison__table-data">Время выплаты</td>
+                            <td class="comparison__table-data"><span class="checkmark">До 24 часов</span></td>
+                            <td class="comparison__table-data">3-5 рабочих дней</td>
+                        </tr>
+                        <tr class="comparison__table-row">
+                            <td class="comparison__table-data">Бонус на первый депозит</td>
+                            <td class="comparison__table-data"><span class="checkmark">До €1000 + 200 фриспинов</span>
+                            </td>
+                            <td class="comparison__table-data">До €200</td>
+                        </tr>
+                        <tr class="comparison__table-row">
+                            <td class="comparison__table-data">Программа лояльности</td>
+                            <td class="comparison__table-data"><span class="checkmark">10-уровневая система</span></td>
+                            <td class="comparison__table-data">Базовая программа</td>
+                        </tr>
+                        <tr class="comparison__table-row">
+                            <td class="comparison__table-data">Количество провайдеров</td>
+                            <td class="comparison__table-data"><span class="checkmark">Более 80</span></td>
+                            <td class="comparison__table-data">20-30</td>
+                        </tr>
+                        <tr class="comparison__table-row">
+                            <td class="comparison__table-data">Мобильное приложение</td>
+                            <td class="comparison__table-data"><span class="checkmark">iOS и Android</span></td>
+                            <td class="comparison__table-data">Только мобильная версия сайта</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps" id="steps">
+        <div class="container">
+            <div class="steps__content">
+                <h2 class="steps__title">Как начать играть</h2>
+                <div class="steps__grid">
+                    <div class="card step-card">
+                        <div class="step-card__number">1</div>
+                        <h3 class="step-card__title">Регистрация</h3>
+                        <p class="step-card__description">Создайте аккаунт, заполнив базовую информацию о себе. Процесс
+                            занимает менее 2 минут.</p>
+                    </div>
+
+                    <div class="card step-card">
+                        <div class="step-card__number">2</div>
+                        <h3 class="step-card__title">Верификация</h3>
+                        <p class="step-card__description">Подтвердите свою личность, загрузив документы. Это необходимо
+                            для безопасности ваших средств.</p>
+                    </div>
+
+                    <div class="card step-card">
+                        <div class="step-card__number">3</div>
+                        <h3 class="step-card__title">Пополнение счета</h3>
+                        <p class="step-card__description">Выберите удобный способ платежа и внесите депозит. Минимальная
+                            сумма — всего €10.</p>
+                    </div>
+
+                    <div class="card step-card">
+                        <div class="step-card__number">4</div>
+                        <h3 class="step-card__title">Получите бонус</h3>
+                        <p class="step-card__description">Активируйте приветственный бонус и получите до €1000 на свой
+                            первый депозит.</p>
+                    </div>
+
+                    <div class="card step-card">
+                        <div class="step-card__number">5</div>
+                        <h3 class="step-card__title">Начните играть</h3>
+                        <p class="step-card__description">Выберите игру из нашей обширной коллекции и испытайте удачу!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <div class="advantages__content">
+                <h2 class="advantages__title">Преимущества Lizaro Casino</h2>
+                <div class="advantages__grid">
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon icon--lock"></div>
+                        <div class="advantage-card__content">
+                            <h3 class="advantage-card__title">Безопасность и лицензия</h3>
+                            <p class="advantage-card__description">Официальная лицензия и передовые технологии
+                                шифрования гарантируют полную безопасность ваших данных и средств.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon icon--mobile"></div>
+                        <div class="advantage-card__content">
+                            <h3 class="advantage-card__title">Мобильная оптимизация</h3>
+                            <p class="advantage-card__description">Играйте где угодно с нашего мобильного приложения или
+                                адаптированной версии сайта для смартфонов и планшетов.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon icon--headset"></div>
+                        <div class="advantage-card__content">
+                            <h3 class="advantage-card__title">Круглосуточная поддержка</h3>
+                            <p class="advantage-card__description">Наша служба поддержки доступна 24/7 через чат,
+                                телефон или email на 8 языках.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon icon--trophy"></div>
+                        <div class="advantage-card__content">
+                            <h3 class="advantage-card__title">Программа лояльности</h3>
+                            <p class="advantage-card__description">Многоуровневая программа с эксклюзивными бонусами,
+                                кэшбэком и персональным менеджером для VIP-клиентов.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon icon--bolt"></div>
+                        <div class="advantage-card__content">
+                            <h3 class="advantage-card__title">Быстрые выплаты</h3>
+                            <p class="advantage-card__description">Выводите выигрыши в течение 24 часов на самые
+                                популярные платежные системы.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon icon--gamepad"></div>
+                        <div class="advantage-card__content">
+                            <h3 class="advantage-card__title">Живые дилеры</h3>
+                            <p class="advantage-card__description">Погрузитесь в атмосферу реального казино с играми с
+                                живыми дилерами в HD-качестве.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section class="content" id="content">
+        <div class="container">
+            <div class="content__content">
+                <div class="content__block">
+                    <h2 class="content__title">Инновационные игровые технологии</h2>
+                    <p class="content__text">Lizaro Casino предлагает передовой игровой опыт с использованием самых
+                        современных технологий. Наша платформа оптимизирована для обеспечения бесперебойной игры даже
+                        при медленном интернет-соединении.</p>
+                    <p class="content__text">Мы сотрудничаем с ведущими разработчиками игр, включая NetEnt, Microgaming,
+                        Play'n GO и другими, чтобы предложить нашим игрокам самую качественную и разнообразную коллекцию
+                        игр.</p>
+                </div>
+
+                <div class="content__block">
+                    <h2 class="content__title">Ответственная игра</h2>
+                    <p class="content__text">В Lizaro Casino мы серьезно относимся к ответственной игре. Мы предлагаем
+                        различные инструменты для контроля за игровой активностью, включая установление лимитов на
+                        депозиты, времени игры и возможность самоисключения.</p>
+                    <p class="content__text">Наша платформа предназначена для развлечения, и мы призываем наших игроков
+                        относиться к азартным играм как к виду досуга, а не как к способу заработка.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="faq__content">
+                <h2 class="faq__title">Часто задаваемые вопросы</h2>
+                <div class="faq__container">
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <span class="faq__question-text">Как зарегистрироваться в Lizaro Casino?</span>
+                            <div class="faq__icon"></div>
+                        </div>
+                        <div class="faq__answer">
+                            <p class="faq__answer-text">Для регистрации нажмите кнопку "Зарегистрироваться" в правом
+                                верхнем углу сайта. Заполните необходимые поля (имя, email, пароль), подтвердите email и
+                                ваш аккаунт будет создан.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <span class="faq__question-text">Какие методы оплаты принимаются?</span>
+                            <div class="faq__icon"></div>
+                        </div>
+                        <div class="faq__answer">
+                            <p class="faq__answer-text">Мы принимаем кредитные/дебетовые карты (Visa, MasterCard),
+                                электронные кошельки (Skrill, Neteller), банковские переводы и криптовалюты (Bitcoin,
+                                Ethereum).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <span class="faq__question-text">Как быстро обрабатываются выводы средств?</span>
+                            <div class="faq__icon"></div>
+                        </div>
+                        <div class="faq__answer">
+                            <p class="faq__answer-text">Время обработки выплат составляет до 24 часов для электронных
+                                кошельков и до 3 рабочих дней для банковских карт и переводов.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <span class="faq__question-text">Есть ли мобильное приложение?</span>
+                            <div class="faq__icon"></div>
+                        </div>
+                        <div class="faq__answer">
+                            <p class="faq__answer-text">Да, у нас есть мобильные приложения для iOS и Android. Вы можете
+                                скачать их прямо с нашего сайта или из официальных магазинов приложений.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <span class="faq__question-text">Какие бонусы доступны новым игрокам?</span>
+                            <div class="faq__icon"></div>
+                        </div>
+                        <div class="faq__answer">
+                            <p class="faq__answer-text">Новые игроки получают приветственный бонус до €1000 + 200
+                                фриспинов на первый депозит. Также доступны различные еженедельные и ежемесячные акции.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <span class="faq__question-text">Как связаться со службой поддержки?</span>
+                            <div class="faq__icon"></div>
+                        </div>
+                        <div class="faq__answer">
+                            <p class="faq__answer-text">Наша служба поддержки доступна 24/7 через онлайн-чат на сайте,
+                                по электронной почте support@lizaro.com и по телефону +44 800 123 4567.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big CTA - финальный призыв -->
+    <section class="big-cta" id="cta">
+        <div class="container">
+            <div class="big-cta__content">
+                <h2 class="big-cta__title">Готовы испытать удачу?</h2>
+                <p class="big-cta__description">Присоединяйтесь к тысячам довольных игроков по всему миру. Начните
+                    играть в Lizaro Casino сегодня и получите эксклюзивный бонус!</p>
+                <a href="#" class="btn btn--primary btn--large">Начать играть сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <span class="footer__logo-icon icon--dragon"></span>
+                    <span class="footer__logo-text">LIZARO CASINO</span>
+                </a>
+                <p class="footer__disclaimer">Lizaro Casino — это премиум игровая платформа с лицензией, предлагающая
+                    широкий выбор азартных игр. Играйте ответственно. Минимальный возраст для участия — 18 лет.</p>
+
+                <div class="footer__payments">
+                    <div class="footer__payment-icon icon--visa"></div>
+                    <div class="footer__payment-icon icon--mastercard"></div>
+                    <div class="footer__payment-icon icon--bitcoin"></div>
+                </div>
+
+                <p class="footer__disclaimer">© 2023 Lizaro Casino. Все права защищены.</p>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__bottom-text">Lizaro Casino operates under the license of the Malta Gaming Authority
+                    (MGA/B2C/394/2017). Gambling can be addictive. Play responsibly. 18+ only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

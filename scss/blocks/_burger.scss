@@ -1,0 +1,112 @@
+.burger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 27px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    transition:
+        opacity 0.3s ease,
+        transform 0.1s ease;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: none;
+    z-index: 1001;
+
+    @include vp-1023 {
+        display: flex;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &:focus-visible {
+        outline: 2px solid #563c27;
+        outline-offset: 2px;
+        border-radius: 2px;
+    }
+
+    &__line {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #f0e6d6;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+
+    &__line:nth-child(1) {
+        top: 6px;
+        transform-origin: center;
+    }
+
+    &__line:nth-child(2) {
+        top: 12px;
+        opacity: 1;
+    }
+
+    &__line:nth-child(3) {
+        top: 18px;
+        transform-origin: center;
+    }
+
+    /* Анимация открытия */
+    &--open .burger__line:nth-child(1) {
+        top: 12px;
+        transform: rotate(45deg);
+        transition:
+            top 0.2s ease,
+            transform 0.3s ease 0.2s;
+    }
+
+    &--open .burger__line:nth-child(2) {
+        opacity: 0;
+        transition: opacity 0.1s ease 0.15s;
+    }
+
+    &--open .burger__line:nth-child(3) {
+        top: 12px;
+        transform: rotate(-45deg);
+        transition:
+            top 0.2s ease,
+            transform 0.3s ease 0.2s;
+    }
+
+    /* Анимация закрытия (зеркальная) */
+    &:not(.burger--open) .burger__line:nth-child(1) {
+        top: 6px;
+        transform: rotate(0);
+        transition:
+            transform 0.3s ease,
+            top 0.2s ease 0.3s;
+    }
+
+    &:not(.burger--open) .burger__line:nth-child(2) {
+        opacity: 1;
+        transition: opacity 0.1s ease 0.2s;
+    }
+
+    &:not(.burger--open) .burger__line:nth-child(3) {
+        top: 18px;
+        transform: rotate(0);
+        transition:
+            transform 0.3s ease,
+            top 0.2s ease 0.3s;
+    }
+}
