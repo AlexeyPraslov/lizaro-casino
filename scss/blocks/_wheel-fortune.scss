@@ -113,3 +113,37 @@
 .wheel-fortune__popup-close:hover {
     background: #c0392b;
 }
+
+.wheel-fortune__cta-btn {
+    font-size: 18px;
+    padding: 12px 35px;
+    background-image: url("../images/btn-2.webp");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0;
+    color: $color-soapstone;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $color-soapstone;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px $color-black-30;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $color-soapstone;
+        outline-offset: 4px;
+    }
+
+    @include vp-767 {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    @include vp-480 {
+        font-size: 14px;
+        padding: 8px 24px;
+    }
+}
