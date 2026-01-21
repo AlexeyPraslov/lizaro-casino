@@ -3353,4 +3353,54 @@ h2 {
 }
 .responsible__link:hover, .responsible__link:focus {
   opacity: 0.8;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* section-nav injected (compiled equivalent) */
+.section-nav {
+  margin-top: 40px;
+}
+.section-nav__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section-nav__item {
+  display: flex;
+  align-items: center;
+}
+.section-nav__link {
+  color: #f0e6d6;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.section-nav__link:hover {
+  color: #563c27;
+}
+@media (max-width: 1023px) {
+  .section-nav__list {
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+  .section-nav__item {
+    width: 100%;
+    justify-content: center;
+  }
+  .section-nav__link {
+    font-size: 18px;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+  }
+}
+/* end section-nav */
+
+/* section-cta injected */
+.section-cta{margin-top:40px;display:flex;justify-content:center}
+/*# sourceMappingURL=style.css.map */
