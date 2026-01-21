@@ -51,6 +51,11 @@
             transform: scale(1.05);
         }
 
+        &:active {
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+        }
+
         &::after {
             content: "";
             position: absolute;
