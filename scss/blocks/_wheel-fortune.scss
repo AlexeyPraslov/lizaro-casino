@@ -1,149 +1,155 @@
 .wheel-fortune {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
-    display: block;
+    padding: 20px;
 
-    @media (min-width: 1024px) {
-        display: none;
+    display: none;
+
+    @include vp-1023 {
+        display: block;
     }
-}
 
-.wheel-fortune__canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
+    &__canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 
-.wheel-fortune__button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 30%;
-    height: 30%;
-    margin: -15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    color: #333;
-    font: bold 1.5rem sans-serif;
-    user-select: none;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow:
-        0 0 0 8px #ff0000,
-        0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s;
-    z-index: 10;
-}
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30%;
+        height: 30%;
+        margin: -15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        color: #333;
+        font: bold 1.5rem sans-serif;
+        user-select: none;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow:
+            0 0 0 8px #ff0000,
+            0 4px 12px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s;
+        z-index: 10;
 
-.wheel-fortune__button:hover {
-    transform: scale(1.05);
-}
+        &:hover {
+            transform: scale(1.05);
+        }
 
-.wheel-fortune__button::after {
-    content: "";
-    position: absolute;
-    top: -17px;
-    border: 10px solid transparent;
-    border-bottom-color: #ff0000;
-    border-top: none;
-}
+        &::after {
+            content: "";
+            position: absolute;
+            top: -17px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 10px solid transparent;
+            border-bottom-color: #ff0000;
+            border-top: none;
+            z-index: 11;
+        }
+    }
 
-.wheel-fortune__popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transition:
-        opacity 0.3s,
-        visibility 0.3s;
-}
+    &__popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+            opacity 0.3s,
+            visibility 0.3s;
+    }
 
-.wheel-fortune__popup_active {
-    opacity: 1;
-    visibility: visible;
-}
+    &__popup_active {
+        opacity: 1;
+        visibility: visible;
+    }
 
-.wheel-fortune__popup-content {
-    background: white;
-    padding: 30px 40px;
-    border-radius: 12px;
-    text-align: center;
-    max-width: 90%;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-}
+    &__popup-content {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 12px;
+        text-align: center;
+        max-width: 90%;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
 
-.wheel-fortune__popup-title {
-    margin: 0 0 15px;
-    color: #e74c3c;
-    font-size: 28px;
-}
+    &__popup-title {
+        margin: 0 0 15px;
+        color: #e74c3c;
+        font-size: 28px;
+    }
 
-.wheel-fortune__popup-text {
-    font-size: 20px;
-    margin: 0 0 20px;
-    color: #333;
-}
+    &__popup-text {
+        font-size: 20px;
+        margin: 0 0 20px;
+        color: #333;
+    }
 
-.wheel-fortune__popup-close {
-    background: #e74c3c;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    font-size: 18px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
+    &__popup-close {
+        background: #e74c3c;
+        color: white;
+        border: none;
+        padding: 10px 24px;
+        font-size: 18px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
 
-.wheel-fortune__popup-close:hover {
-    background: #c0392b;
-}
+    &__popup-close:hover {
+        background: #c0392b;
+    }
 
-.wheel-fortune__cta-btn {
-    font-size: 18px;
-    padding: 12px 35px;
-    background-image: url("../images/btn-2.webp");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 0;
-    color: $color-soapstone;
-    transition: all 0.3s ease;
-
-    &:hover {
+    &__cta-btn {
+        font-size: 18px;
+        padding: 12px 35px;
+        background-image: url("../images/btn-2.webp");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 0;
         color: $color-soapstone;
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px $color-black-30;
-    }
+        transition: all 0.3s ease;
 
-    &:focus-visible {
-        outline: 2px solid $color-soapstone;
-        outline-offset: 4px;
-    }
+        &:hover {
+            color: $color-soapstone;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px $color-black-30;
+        }
 
-    @include vp-767 {
-        font-size: 16px;
-        padding: 10px 30px;
-    }
+        &:focus-visible {
+            outline: 2px solid $color-soapstone;
+            outline-offset: 4px;
+        }
 
-    @include vp-480 {
-        font-size: 14px;
-        padding: 8px 24px;
+        @include vp-767 {
+            font-size: 16px;
+            padding: 10px 30px;
+        }
+
+        @include vp-480 {
+            font-size: 14px;
+            padding: 8px 24px;
+        }
     }
 }
