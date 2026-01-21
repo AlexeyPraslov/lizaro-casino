@@ -1,198 +1,198 @@
 // banner.scss
 .banner {
-  position: relative;
-  overflow: hidden;
-  background-color: $color-wood-bark;
-  height: 320px;
-  margin: 0;
-
-  @include vp-1023 {
-    height: 365px;
-  }
-
-  @include vp-767 {
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-
-    @include vp-767 {
-      position: relative;
-      height: 280px;
-      flex-shrink: 0;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 0;
-      display: block;
-      filter: brightness(0.6);
-    }
-  }
-
-  &__container {
     position: relative;
-    height: 100%;
-    z-index: 5;
-
-    @include vp-767 {
-      position: static;
-      height: auto;
-      background-color: $color-wood-bark;
-      padding: 30px 0;
-    }
-  }
-
-  &__content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 60px;
+    overflow: hidden;
+    background-color: $color-wood-bark;
+    height: 320px;
+    margin: 0;
 
     @include vp-1023 {
-      align-items: center;
-      text-align: center;
-      padding: 0 40px;
+        height: 365px;
     }
 
     @include vp-767 {
-      height: auto;
-      padding: 0 20px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
     }
 
-    @include vp-480 {
-      padding: 0 15px;
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+
+        @include vp-767 {
+            position: relative;
+            height: 280px;
+            flex-shrink: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 0;
+            display: block;
+            filter: brightness(0.6);
+        }
     }
 
-    &--accent {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: center;
+    &__container {
+        position: relative;
+        height: 100%;
+        z-index: 5;
 
-      @include vp-767 {
-        height: auto;
-        align-items: center;
-      }
+        @include vp-767 {
+            position: static;
+            height: auto;
+            background-color: $color-wood-bark;
+            padding: 30px 0;
+        }
+    }
 
-      .banner__title,
-      .banner__description {
-        text-align: right;
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 60px;
 
         @include vp-1023 {
-          text-align: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 40px;
         }
-      }
 
-      @include vp-1023 {
-        align-items: center;
-        text-align: center;
-        padding: 0 40px;
-      }
+        @include vp-767 {
+            height: auto;
+            padding: 0 20px;
+        }
 
-      @include vp-767 {
-        padding: 0 20px;
-      }
+        @include vp-480 {
+            padding: 0 15px;
+        }
 
-      @include vp-480 {
-        padding: 0 15px;
-      }
-    }
-  }
+        &--accent {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
 
-  &__title {
-    font-weight: 700;
-    font-size: 40px;
-    margin: 0 0 15px 0;
-    color: $color-soapstone;
-    line-height: 1;
-    text-shadow:
-      -1px -1px 0 $color-black,
-      1px -1px 0 $color-black,
-      -1px 1px 0 $color-black,
-      1px 1px 0 $color-black;
+            @include vp-767 {
+                height: auto;
+                align-items: center;
+            }
 
-    @include vp-767 {
-      font-size: 32px;
-    }
+            .banner__title,
+            .banner__description {
+                text-align: right;
 
-    @include vp-480 {
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
+                @include vp-1023 {
+                    text-align: center;
+                }
+            }
 
-    span {
-      display: block;
-    }
-  }
+            @include vp-1023 {
+                align-items: center;
+                text-align: center;
+                padding: 0 40px;
+            }
 
-  &__description {
-    font-size: 20px;
-    margin: 0 0 25px 0;
-    color: $color-soapstone;
-    max-width: 600px;
-    text-shadow:
-      -1px -1px 0 $color-black,
-      1px -1px 0 $color-black,
-      -1px 1px 0 $color-black,
-      1px 1px 0 $color-black;
+            @include vp-767 {
+                padding: 0 20px;
+            }
 
-    @include vp-767 {
-      font-size: 18px;
-      max-width: 500px;
+            @include vp-480 {
+                padding: 0 15px;
+            }
+        }
     }
 
-    @include vp-480 {
-      font-size: 16px;
-      margin-bottom: 20px;
-      max-width: 90%;
-    }
-  }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        margin: 0 0 15px 0;
+        color: $color-soapstone;
+        line-height: 1;
+        text-shadow:
+            -1px -1px 0 $color-black,
+            1px -1px 0 $color-black,
+            -1px 1px 0 $color-black,
+            1px 1px 0 $color-black;
 
-  &__button {
-    font-size: 18px;
-    padding: 12px 35px;
-    background-image: url("../images/btn-2.webp");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 0;
-    color: $color-soapstone;
-    transition: all 0.3s ease;
+        @include vp-767 {
+            font-size: 32px;
+        }
 
-    &:hover {
-      color: $color-soapstone;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px $color-black-30;
-    }
+        @include vp-480 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
 
-    &:focus-visible {
-      outline: 2px solid $color-soapstone;
-      outline-offset: 4px;
+        span {
+            display: block;
+        }
     }
 
-    @include vp-767 {
-      font-size: 16px;
-      padding: 10px 30px;
+    &__description {
+        font-size: 20px;
+        margin: 0 0 25px 0;
+        color: $color-soapstone;
+        max-width: 600px;
+        text-shadow:
+            -1px -1px 0 $color-black,
+            1px -1px 0 $color-black,
+            -1px 1px 0 $color-black,
+            1px 1px 0 $color-black;
+
+        @include vp-767 {
+            font-size: 18px;
+            max-width: 500px;
+        }
+
+        @include vp-480 {
+            font-size: 14px;
+            margin-bottom: 20px;
+            max-width: 90%;
+        }
     }
 
-    @include vp-480 {
-      font-size: 14px;
-      padding: 8px 24px;
+    &__button {
+        font-size: 18px;
+        padding: 12px 35px;
+        background-image: url("../images/btn-2.webp");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 0;
+        color: $color-soapstone;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $color-soapstone;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px $color-black-30;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $color-soapstone;
+            outline-offset: 4px;
+        }
+
+        @include vp-767 {
+            font-size: 16px;
+            padding: 10px 30px;
+        }
+
+        @include vp-480 {
+            font-size: 14px;
+            padding: 8px 24px;
+        }
     }
-  }
 }
