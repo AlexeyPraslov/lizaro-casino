@@ -13,7 +13,7 @@ if (wheelSection) {
     const button = wheelSection.querySelector(".wheel-fortune__button");
     const popup = wheelSection.querySelector(".wheel-fortune__popup");
     const prizeSpan = wheelSection.querySelector(".wheel-fortune__prize");
-    const closeBtn = wheelSection.querySelector(".wheel-fortune__popup-close");
+    const closeBtn = wheelSection.querySelector(".btn.hero__button");
 
     const ctx = canvas.getContext("2d");
     const dia = canvas.width;
