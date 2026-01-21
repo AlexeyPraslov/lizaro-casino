@@ -1,269 +1,269 @@
 .hero {
-  position: relative;
-  overflow: hidden;
-  background-color: $color-black-russian;
-  height: 320px;
-  margin: 85px 0 0 0;
-
-  @include vp-1023 {
-    height: 365px;
-    margin: 75px 0 0 0;
-  }
-
-  @include vp-767 {
-    height: 280px;
-  }
-
-  &__slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  &__slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-
-    @media (prefers-reduced-motion: reduce) {
-      transition: none;
-    }
-
-    &--active {
-      opacity: 1;
-    }
-  }
-
-  .hero__slider-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 0;
-      display: block;
-      filter: brightness(0.6);
-    }
-  }
-
-  &__arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: $color-dandelion;
-    font-size: 40px;
-    cursor: pointer;
-    z-index: 10;
-    padding: 10px;
-    transition: transform 0.2s ease;
-    border-radius: 4px;
-
-    &:hover {
-      transform: translateY(-50%) scale(1.1);
-    }
-
-    &:focus-visible {
-      outline: 2px solid $color-soapstone;
-      outline-offset: 4px;
-    }
-
-    @include vp-480 {
-      padding: 5px;
-    }
-
-    &--left {
-      left: 20px;
-
-      @include vp-767 {
-        left: 12px;
-      }
-
-      @include vp-480 {
-        left: 8px;
-        font-size: 32px;
-      }
-    }
-
-    &--right {
-      right: 20px;
-
-      @include vp-767 {
-        right: 12px;
-      }
-
-      @include vp-480 {
-        right: 8px;
-        font-size: 32px;
-      }
-    }
-  }
-
-  &__container {
     position: relative;
-    height: 100%;
-    z-index: 5;
-  }
-
-  &__content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    overflow: hidden;
+    background-color: $color-black-russian;
+    height: 320px;
+    margin: 85px 0 0 0;
 
     @include vp-1023 {
-      align-items: center;
-      text-align: center;
-    }
-  }
-
-  &__title {
-    font-weight: 700;
-    font-size: 40px;
-    margin: 0 0 15px 0;
-    color: $color-soapstone;
-    line-height: 1;
-    text-shadow:
-      -1px -1px 0 $color-black,
-      1px -1px 0 $color-black,
-      -1px 1px 0 $color-black,
-      1px 1px 0 $color-black;
-
-    @include vp-767 {
-      font-size: 32px;
-    }
-
-    @include vp-480 {
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-
-    span {
-      display: block;
-    }
-  }
-
-  &__description {
-    font-size: 20px;
-    margin: 0 0 15px 0;
-    color: $color-soapstone;
-    max-width: 600px;
-    text-shadow:
-      -1px -1px 0 $color-black,
-      1px -1px 0 $color-black,
-      -1px 1px 0 $color-black,
-      1px 1px 0 $color-black;
-
-    @include vp-767 {
-      font-size: 18px;
-      max-width: 500px;
-      padding: 0 15px;
-    }
-
-    @include vp-480 {
-      font-size: 16px;
-      margin-bottom: 20px;
-      max-width: 90%;
-      padding: 0 15px;
-    }
-  }
-
-  &__button {
-    font-size: 18px;
-    padding: 12px 35px;
-    background-image: url("../images/btn-2.webp");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 0;
-    color: $color-soapstone;
-    transition: all 0.3s ease;
-
-    &:hover {
-      color: $color-soapstone;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px $color-black-30;
-    }
-
-    &:focus-visible {
-      outline: 2px solid $color-soapstone;
-      outline-offset: 4px;
+        height: 365px;
+        margin: 75px 0 0 0;
     }
 
     @include vp-767 {
-      font-size: 16px;
-      padding: 10px 30px;
+        height: 280px;
     }
 
-    @include vp-480 {
-      font-size: 14px;
-      padding: 8px 24px;
-    }
-  }
-
-  &__slider-dots {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    z-index: 10;
-
-    @include vp-767 {
-      bottom: 80px;
+    &__slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
-    @include vp-480 {
-      bottom: 6px;
-      gap: 6px;
-    }
-  }
+    &__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
 
-  &__slider-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $color-soapstone-50;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: block;
-    line-height: 1;
-    padding: 0;
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
 
-    @media (prefers-reduced-motion: reduce) {
-      transition: none;
+        &--active {
+            opacity: 1;
+        }
     }
 
-    &:hover,
-    &:focus-visible {
-      background-color: $color-soapstone;
-      transform: scale(1.2);
-      outline: none;
+    &__slider-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 0;
+            display: block;
+            filter: brightness(0.6);
+        }
     }
 
-    &--active {
-      background-color: $color-soapstone;
-      transform: scale(1.2);
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: $color-dandelion;
+        font-size: 40px;
+        cursor: pointer;
+        z-index: 10;
+        padding: 10px;
+        transition: transform 0.2s ease;
+        border-radius: 4px;
+
+        &:hover {
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        &:focus-visible {
+            outline: 2px solid $color-soapstone;
+            outline-offset: 4px;
+        }
+
+        @include vp-480 {
+            padding: 5px;
+        }
+
+        &--left {
+            left: 20px;
+
+            @include vp-767 {
+                left: 12px;
+            }
+
+            @include vp-480 {
+                left: 8px;
+                font-size: 32px;
+            }
+        }
+
+        &--right {
+            right: 20px;
+
+            @include vp-767 {
+                right: 12px;
+            }
+
+            @include vp-480 {
+                right: 8px;
+                font-size: 32px;
+            }
+        }
     }
 
-    @include vp-480 {
-      width: 8px;
-      height: 8px;
+    &__container {
+        position: relative;
+        height: 100%;
+        z-index: 5;
     }
-  }
+
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include vp-1023 {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        margin: 0 0 15px 0;
+        color: $color-soapstone;
+        line-height: 1;
+        text-shadow:
+            -1px -1px 0 $color-black,
+            1px -1px 0 $color-black,
+            -1px 1px 0 $color-black,
+            1px 1px 0 $color-black;
+
+        @include vp-767 {
+            font-size: 32px;
+        }
+
+        @include vp-480 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    &__description {
+        font-size: 20px;
+        margin: 0 0 15px 0;
+        color: $color-soapstone;
+        max-width: 600px;
+        text-shadow:
+            -1px -1px 0 $color-black,
+            1px -1px 0 $color-black,
+            -1px 1px 0 $color-black,
+            1px 1px 0 $color-black;
+
+        @include vp-767 {
+            font-size: 18px;
+            max-width: 500px;
+            padding: 0 15px;
+        }
+
+        @include vp-480 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            max-width: 90%;
+            padding: 0 15px;
+        }
+    }
+
+    &__button {
+        font-size: 18px;
+        padding: 12px 35px;
+        background-image: url("../images/btn-2.webp");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 0;
+        color: $color-soapstone;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $color-soapstone;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px $color-black-30;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $color-soapstone;
+            outline-offset: 4px;
+        }
+
+        @include vp-767 {
+            font-size: 16px;
+            padding: 10px 30px;
+        }
+
+        @include vp-480 {
+            font-size: 14px;
+            padding: 8px 24px;
+        }
+    }
+
+    &__slider-dots {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        z-index: 10;
+
+        @include vp-767 {
+            bottom: 8px;
+        }
+
+        @include vp-480 {
+            bottom: 6px;
+            gap: 6px;
+        }
+    }
+
+    &__slider-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $color-soapstone-50;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: block;
+        line-height: 1;
+        padding: 0;
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+
+        &:hover,
+        &:focus-visible {
+            background-color: $color-soapstone;
+            transform: scale(1.2);
+            outline: none;
+        }
+
+        &--active {
+            background-color: $color-soapstone;
+            transform: scale(1.2);
+        }
+
+        @include vp-480 {
+            width: 8px;
+            height: 8px;
+        }
+    }
 }

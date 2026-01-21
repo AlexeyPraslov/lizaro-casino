@@ -1,10 +1,10 @@
 const sectors = [
-    { color: "#FF6384", label: "Приз 1" },
-    { color: "#36A2EB", label: "Приз 2" },
-    { color: "#FFCE56", label: "Приз 3" },
-    { color: "#4BC0C0", label: "Приз 4" },
-    { color: "#9966FF", label: "Приз 5" },
-    { color: "#FF9F40", label: "Приз 6" },
+    { color: "#FF6384", label: "Free Spins" },
+    { color: "#36A2EB", label: "Bonus " },
+    { color: "#FFCE56", label: "Freebet" },
+    { color: "#4BC0C0", label: "Cashback" },
+    { color: "#9966FF", label: "Crab" },
+    { color: "#FF9F40", label: "Monety" },
 ];
 
 const wheelSection = document.querySelector(".wheel-fortune");
@@ -23,8 +23,7 @@ if (wheelSection) {
     const tot = sectors.length;
     const arc = TAU / tot;
 
-    // === ПАРАМЕТРЫ АНИМАЦИИ (сделаны короче) ===
-    const friction = 0.975; // Быстрее тормозит (было 0.991)
+    const friction = 0.975;
     const angVelMin = 0.002;
     let angVelMax = 0;
     let angVel = 0;
@@ -33,23 +32,26 @@ if (wheelSection) {
     let isAccelerating = false;
     let animFrame = null;
 
-    // === Закрытие попапа ===
     const closePopup = () => {
         popup.classList.remove("wheel-fortune__popup_active");
     };
-    closeBtn.addEventListener("click", closePopup);
+
+    closeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        closePopup();
+    });
+
     popup.addEventListener("click", (e) => {
         if (e.target === popup) closePopup();
     });
 
-    // === Определение сектора (как раньше) ===
     const getCurrentSectorIndex = () => {
         const normalizedAng = ((ang % TAU) + TAU) % TAU;
         return Math.floor(tot - (normalizedAng / TAU) * tot) % tot;
     };
 
-    // === Отрисовка ===
     const drawWheel = () => {
+        ctx.clearRect(0, 0, dia, dia);
         sectors.forEach((sector, i) => {
             const startAng = arc * i;
             const endAng = startAng + arc;
@@ -65,38 +67,33 @@ if (wheelSection) {
             ctx.translate(rad, rad);
             ctx.rotate(startAng + arc / 2);
             ctx.textAlign = "right";
-            ctx.fillStyle = "#fff";
+            ctx.fillStyle = "#4E342E";
             ctx.font = "bold 18px sans-serif";
             ctx.fillText(sector.label, rad - 20, 8);
             ctx.restore();
         });
     };
 
-    // === Вращение через CSS ===
     const rotateCanvas = () => {
         canvas.style.transform = `rotate(${ang - PI / 2}rad)`;
     };
 
-    // === Анимационный цикл (ускоренный) ===
     const animate = () => {
         if (!isSpinning) return;
 
-        // Ускорение — быстрее
         if (isAccelerating) {
-            if (!angVel) angVel = 0.05; // Больше начальный импульс
-            angVel *= 1.12; // Быстрее разгон
+            if (!angVel) angVel = 0.05;
+            angVel *= 1.12;
             if (angVel >= angVelMax) isAccelerating = false;
         }
 
-        // Замедление — резче
         if (!isAccelerating) {
-            angVel *= friction; // Трение выше → быстрее остановка
+            angVel *= friction;
             if (angVel < angVelMin) {
                 angVel = 0;
                 isSpinning = false;
                 cancelAnimationFrame(animFrame);
 
-                // Показ результата
                 const idx = getCurrentSectorIndex();
                 prizeSpan.textContent = sectors[idx].label;
                 popup.classList.add("wheel-fortune__popup_active");
@@ -111,17 +108,14 @@ if (wheelSection) {
         animFrame = requestAnimationFrame(animate);
     };
 
-    // === Запуск ===
     button.addEventListener("click", () => {
         if (isSpinning) return;
         isSpinning = true;
         isAccelerating = true;
-        // Макс. скорость — чуть выше, но разгон короче
         angVelMax = 0.35 + Math.random() * 0.1;
         animate();
     });
 
-    // Инициализация
     drawWheel();
     rotateCanvas();
 }
